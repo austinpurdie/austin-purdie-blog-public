@@ -1,0 +1,16 @@
+<div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}">Home</a></li>
+        <li class="nav-about {% if page.current == 'about' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}about">About</a></li>
+    <hr>
+        <li class="nav-causal-inference {% if page.current == 'causal-inference' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tag/Causal%20Inference">Causal Inference</a></li>
+        <li class="nav-machine-learning {% if page.current == 'machine-learning' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tag/Machine%20Learning">Machine Learning</a></li>
+    <hr>
+        <div class = "nav-social">{% include social-media-links.html %}</div>
+    </ul>
+</div>
+<span class="nav-cover"></span>
